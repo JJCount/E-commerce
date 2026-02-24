@@ -1,0 +1,165 @@
+main .cart .cart__delete, main .cart .close_button, main .products .products__add, main .products .products__article {
+  cursor: pointer;
+  text-align: center;
+}
+
+body {
+  font-family: "Lexend", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+header {
+  width: 100%;
+  padding: 20px 50px;
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+header .header__img-menu {
+  width: 35px;
+  cursor: pointer;
+  display: inline-block;
+}
+header .header__carrito {
+  width: 35px;
+  cursor: pointer;
+  display: inline-block;
+}
+header .header__logotipo {
+  width: 130px;
+  border-radius: 5px;
+}
+header .header__cart {
+  position: relative;
+  display: inline-block;
+}
+header .header__cart .cart__badge {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  background-color: crimson;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+header .header__cart .cart__badge.active {
+  display: flex;
+}
+
+main .banner {
+  width: 100%;
+  padding: 60px, 0;
+  text-align: center;
+  background-image: url("../img/funko_top_banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #333;
+  background-position-y: 55%;
+}
+main .banner .banner__title {
+  width: 100%;
+  font-weight: 600;
+  font-size: 30px;
+  margin: 10px;
+}
+main .banner .banner__subtitle {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 25px;
+  opacity: 0.7;
+}
+main .products {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+  align-items: end;
+}
+main .products .products__img {
+  width: 200px;
+  margin-bottom: 15px;
+}
+main .products .products__description {
+  font-weight: 500;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+main .products .products__price {
+  font-weight: 300;
+  font-size: 15px;
+  text-align: center;
+}
+main .products .products__add {
+  display: block;
+  margin: auto;
+  border-radius: 2px;
+}
+main .cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  background: white;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  /*width: 500px;
+  background-color: #fff;
+  padding: 25px;
+  box-sizing: border-box;
+  height: 100%;
+  position: fixed;
+  right: -100%;
+  top: 100px;
+  box-shadow: -19px -1px 22px -15px rgba(0, 0, 0, 0.30);
+  //display: none;
+  transition: right 0.3s ease;
+  */
+}
+main .cart .close_button {
+  size: 10cm;
+  background-color: rgb(255, 255, 255);
+  color: rgb(152, 38, 38);
+  position: inherit;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+main .cart .cart__title {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  box-sizing: border-box;
+}
+main .cart .cart__items {
+  border-bottom: 1px solid #333;
+  align-items: center;
+  padding: 15px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: auto;
+}
+main .cart .cart__products {
+  width: 60px;
+}
+main .cart .cart__price {
+  font-weight: 500;
+}
+main .cart .cart__delete {
+  width: 15px;
+}
+main .cart.cart--active {
+  transform: translateX(0);
+}/*# sourceMappingURL=styles.css.map */
