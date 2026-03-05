@@ -77,4 +77,31 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+const menuIcon = document.getElementById("icon_menu");
+const mainMenu = document.getElementById("main_menu");
+const menuCloseBtn = document.querySelector(".close_menu");
+
+
+
+if (menuIcon && mainMenu) {
+
+  menuIcon.addEventListener("click", () => {
+
+    console.log("Menu abierto");
+
+    mainMenu.classList.toggle("main_menu--active");
+
+  });
+}
+
+if (menuCloseBtn && mainMenu) {
+
+  menuCloseBtn.addEventListener("click", () => {
+
+    mainMenu.classList.remove("main_menu--active");
+
+  });
+
+}
+
 
